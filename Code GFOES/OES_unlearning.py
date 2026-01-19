@@ -65,5 +65,6 @@ def repair_phase():
 if __name__ == '__main__':
     erasure_phase()
     repair_phase()
-    torch.save(unlearning_model.state_dict(), f"./{PATH_UNLEARNING}/{model_name}_{training_dataset.__class__.__name__}1.pth")
+    torch.save(unlearning_model.state_dict(), f"./{PATH_UNLEARNING}/{model_name}_{training_dataset.__class__.__name__}.pth")
+
 
